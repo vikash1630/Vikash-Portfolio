@@ -35,7 +35,7 @@ const Navbar = ({ onSectionChange, currentSection }) => {
         ${
           isScrolled
             ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl shadow-lg"
-            : "bg-transparent"
+            : "md:bg-transparent bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl"
         }`}
     >
       <div className="container mx-auto px-5 sm:px-8 lg:px-12">
@@ -133,14 +133,14 @@ const Navbar = ({ onSectionChange, currentSection }) => {
               </div>
             </button>
           </div>
-
         </div>
 
         {/* MOBILE DROPDOWN */}
         <div
           className={`
             md:hidden overflow-hidden transition-all duration-500
-            ${isMobileMenuOpen ? "max-h-96 pb-4" : "max-h-0"}
+            bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl
+            ${isMobileMenuOpen ? "max-h-[600px] pb-4" : "max-h-0"}
           `}
         >
           <div className="flex flex-col space-y-2 pt-3">
@@ -167,7 +167,7 @@ const Navbar = ({ onSectionChange, currentSection }) => {
         </div>
       </div>
 
-      {/* Animations */}
+      {/* ANIMATIONS */}
       <style>{`
         @keyframes underlineGlow {
           from { opacity: 0; width: 0; }
