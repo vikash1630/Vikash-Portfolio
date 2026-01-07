@@ -111,8 +111,8 @@ export const projectsData = [
             "Vite"
         ],
         liveLinks: {
-            primary: "https://your-notes-app-link.onrender.com",
-            secondary: "https://your-notes-app-link.onrender.com",
+            primary: "https://notes-app-mwwd.onrender.com",
+            secondary: "https://notes-app-mwwd.onrender.com",
         },
         githubLink: "https://github.com/vikash1630/Notes-App.git",
         image: notesImg, // replace with your imported image
