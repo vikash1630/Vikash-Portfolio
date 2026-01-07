@@ -5,6 +5,7 @@ import ecommerceImg from "../assets/icons/ecommerce.png";
 import iplImg from "../assets/icons/ipl.png";
 import assessmentImg from "../assets/icons/speakingassessment.jpg";
 import financeImg from "../assets/icons/financetracker.jpg";
+import notesImg from "../assets/icons/notesLogo.png";
 
 export const projectsData = [
     {
@@ -96,6 +97,27 @@ export const projectsData = [
         githubLink: "https://github.com/yourusername/student-report",
         image: assessmentImg,
     },
+
+    {
+        id: 6,
+        title: "Advanced Notes Management App",
+        description:
+            "A feature-rich and beautifully designed notes application with pinning, archiving, live search, category filters, and smooth UI animations. Fully responsive and powered by React, Tailwind CSS, and LocalStorage for instant, offline-friendly note management.",
+        technologies: [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "LocalStorage",
+            "Vite"
+        ],
+        liveLinks: {
+            primary: "https://your-notes-app-link.onrender.com",
+            secondary: "https://your-notes-app-link.onrender.com",
+        },
+        githubLink: "https://github.com/vikash1630/Notes-App.git",
+        image: notesImg, // replace with your imported image
+    }
+
 
     
 ];
