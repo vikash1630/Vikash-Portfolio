@@ -4,6 +4,7 @@ import soloImg from "../assets/icons/solo.jpg";
 import ecommerceImg from "../assets/icons/ecommerce.png";
 import iplImg from "../assets/icons/ipl.png";
 import assessmentImg from "../assets/icons/speakingassessment.jpg";
+import financeImg from "../assets/icons/financetracker.jpg";
 
 export const projectsData = [
     {
@@ -66,8 +67,24 @@ export const projectsData = [
         image: iplImg,
     },
 
+
+
     {
         id: 4,
+        title: "Personal Finance Tracker",
+        description:
+            "A smart finance tracking application where users can log transactions, manage expenses, visualize total spending, and maintain personal profiles. Built using Express, MongoDB, and EJS for seamless server-side rendering.",
+        technologies: ["Node.js", "Express", "EJS", "MongoDB", "SSR", "JWT Auth", "Tailwind CSS"],
+        liveLinks: {
+            primary: "https://personal-finance-tracker-qofe.onrender.com",
+            secondary: "https://personal-finance-tracker-qofe.onrender.com",
+        },
+        githubLink: "https://github.com/vikash1630/Personal-Finance-Tracker.git",
+        image: financeImg, // replace with your imported image variable
+    },
+
+    {
+        id: 5,
         title: "Student Assessment Report System",
         description:
             "A fast and responsive web tool for generating student performance reports. Includes grade calculation, real-time validation, and printable report cards.",
@@ -79,5 +96,6 @@ export const projectsData = [
         githubLink: "https://github.com/yourusername/student-report",
         image: assessmentImg,
     },
+
     
 ];
