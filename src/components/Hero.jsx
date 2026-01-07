@@ -87,7 +87,7 @@ const Hero = ({ onSectionChange }) => {
           {/* Resume Download */}
           <div className="pt-2 animate-fade-up delay-700">
             <a
-              href="/resume.pdf"
+              href="/MyResume.pdf"
               download
               className="inline-flex items-center space-x-2 px-5 py-3 bg-fire/20 hover:bg-fire/30 text-fire dark:text-fire-light rounded-full font-medium transition-all hover:scale-105"
             >

@@ -1,5 +1,9 @@
-// experience.js - Your work experience and education
-// Fully updated with MGIT, Sri Chaitanya, Ravindra Bharathi logos
+// experience.js - FINAL VERSION (Works on Vercel)
+
+// IMPORT LOCAL LOGOS PROPERLY
+import mgitLogo from "../assets/icons/mgitlogo_2.jpg";
+import sriChaitanyaLogo from "../assets/icons/sriChaitanya.jpg";
+import ravindraLogo from "../assets/icons/RavindraBharathiLogo.png";
 
 export const experienceData = [
   {
@@ -7,7 +11,7 @@ export const experienceData = [
     type: "education",
     title: "Bachelor of Engineering (B.E / B.Tech) - Computer Science",
     company: "Mahatma Gandhi Institute of Technology (MGIT)",
-    logo: "/src/assets/icons/mgitlogo_2.jpg",
+    logo: mgitLogo + "?v=1",
     location: "Kukatpally, Hyderabad, Telangana",
     duration: "2024 - 2028",
     description:
@@ -26,7 +30,7 @@ export const experienceData = [
     type: "education",
     title: "Intermediate (MPC)",
     company: "Sri Chaitanya Junior College",
-    logo: "/src/assets/icons/sriChaitanya.jpg",
+    logo: sriChaitanyaLogo + "?v=1",
     location: "Hyderabad, Telangana",
     duration: "2022 - 2024",
     description:
@@ -44,7 +48,7 @@ export const experienceData = [
     type: "education",
     title: "Primary & High School (Grade 1–10)",
     company: "Ravindra Bharathi School",
-    logo: "/src/assets/icons/RavindraBharathiLogo.png", // Clean high-quality transparent logo
+    logo: ravindraLogo + "?v=1",
     location: "Hyderabad, Telangana",
     duration: "2012 - 2022",
     description:
@@ -56,33 +60,4 @@ export const experienceData = [
     ],
     technologies: ["Science", "Mathematics", "Communication"],
   },
-
-  // PREPARED FOR YOUR FUTURE EXPERIENCE
-//   {
-//     id: 4,
-//     type: "internship",
-//     title: "Full Stack Developer Intern",
-//     company: "Your Future Internship",
-//     logo: "https://cdn-icons-png.flaticon.com/512/9408/9408204.png",
-//     location: "Location",
-//     duration: "Coming Soon",
-//     description:
-//       "Add your internship experience when you get one. This placeholder is already structured for Experience.jsx.",
-//     responsibilities: ["Will be updated", "Will be updated", "Will be updated"],
-//     technologies: ["Tech1", "Tech2"],
-//   },
-
-//   {
-//     id: 5,
-//     type: "freelance",
-//     title: "Freelance Web Developer",
-//     company: "Self-Employed",
-//     logo: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-//     location: "Remote",
-//     duration: "Future",
-//     description:
-//       "Add freelance work once you get clients. This entry is ready to use.",
-//     responsibilities: ["To be added", "To be added"],
-//     technologies: ["React", "Node.js"],
-//   },
 ];

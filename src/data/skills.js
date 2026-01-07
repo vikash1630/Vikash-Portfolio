@@ -7,7 +7,7 @@ export const skillsData = {
     { name: "CSS", color: "water" },
     { name: "JavaScript", color: "primary" },
     { name: "React", color: "water" },
-    { name: "Tailwind", color: "secondary" },
+    { name: "Tailwind CSS", color: "secondary" },
     { name: "Server Side Rendering", color: "grass" },
     // ADD MORE FRONTEND SKILLS HERE IN THE FUTURE
   ],

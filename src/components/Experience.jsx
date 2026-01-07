@@ -1,5 +1,4 @@
-// Experience.jsx
-// NEW VERSION: Railway track timeline, left-aligned dots, full-width cards on mobile
+// Experience.jsx - FINAL VERSION (Logos Fixed + Railway Timeline + No Overflow Issues)
 
 import React from "react";
 import { experienceData } from "../data/experience";
@@ -8,7 +7,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative py-20 sm:py-24 px-6 sm:px-8 lg:px-12 overflow-hidden"
+      className="relative py-24 px-6 sm:px-8 lg:px-12 overflow-hidden"
     >
       {/* Background Orbs */}
       <div className="absolute inset-0 pointer-events-none">
@@ -26,12 +25,11 @@ const Experience = () => {
           <div className="w-32 h-1 mx-auto rounded-full bg-gradient-to-r from-primary to-fire"></div>
         </div>
 
-        {/* Timeline Container */}
+        {/* Timeline GRID */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-[80px_1fr] gap-10 relative">
 
-          {/* LEFT TIMELINE — Only Shows on Desktop */}
+          {/* LEFT LINE (Desktop Only) */}
           <div className="hidden md:flex flex-col items-center relative">
-            {/* Vertical Line */}
             <div className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-fire rounded-full"></div>
           </div>
 
@@ -41,25 +39,25 @@ const Experience = () => {
               <div
                 key={item.id}
                 className="relative animate-fade-up"
-                style={{ animationDelay: `${index * 200}ms` }}
+                style={{ animationDelay: `${index * 180}ms` }}
               >
-                {/* Dot (Desktop only) */}
-                <div className="hidden md:flex absolute left-[-52px] top-4 w-7 h-7 rounded-full bg-gradient-to-br from-primary to-fire shadow-lg animate-pulse-soft border border-white dark:border-gray-900"></div>
+                {/* Dot for timeline */}
+                <div className="hidden md:flex absolute left-[-52px] top-4 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-fire shadow-lg animate-pulse-soft border border-white dark:border-gray-900"></div>
 
-                {/* Experience Card */}
-                <div className="w-full bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-xl p-6 sm:p-7 hover:scale-[1.02] hover:shadow-2xl transition-all relative">
+                {/* EXPERIENCE CARD */}
+                <div className="relative w-full bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-xl p-6 sm:p-7 hover:scale-[1.02] hover:shadow-2xl transition-all overflow-visible">
 
-                  {/* Logo */}
+                  {/* LOGO */}
                   {item.logo && (
                     <img
                       src={item.logo}
                       alt="logo"
-                      className="w-16 h-16 object-contain absolute -top-8 left-6 bg-white dark:bg-gray-900 rounded-xl p-2 shadow-lg border border-gray-200/40 dark:border-gray-700/40"
+                      className="w-14 h-14 object-contain absolute -top-7 left-6 bg-white dark:bg-gray-900 rounded-xl p-1 shadow-lg border border-gray-200/40 dark:border-gray-700/40"
                     />
                   )}
 
-                  {/* Title + Type */}
-                  <div className="mt-10 flex items-start justify-between mb-3">
+                  {/* TITLE + TYPE */}
+                  <div className="mt-10 flex items-start justify-between mb-4">
                     <span className="text-sm font-semibold px-3 py-1 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 text-gray-800 dark:text-gray-100 capitalize">
                       {item.type}
                     </span>
@@ -69,8 +67,8 @@ const Experience = () => {
                     </h3>
                   </div>
 
-                  {/* Meta */}
-                  <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+                  {/* META */}
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
                     <strong>{item.company}</strong> — {item.location}
                   </p>
 
@@ -78,19 +76,19 @@ const Experience = () => {
                     {item.duration}
                   </p>
 
-                  {/* Description */}
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-sm sm:text-base">
+                  {/* DESCRIPTION */}
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-sm">
                     {item.description}
                   </p>
 
-                  {/* Responsibilities */}
+                  {/* RESPONSIBILITIES */}
                   <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400 text-sm">
                     {item.responsibilities.map((res, i) => (
                       <li key={i}>{res}</li>
                     ))}
                   </ul>
 
-                  {/* Tech Stack */}
+                  {/* TECH STACK */}
                   <div className="flex flex-wrap gap-2 mt-5">
                     {item.technologies.map((tech, i) => (
                       <span

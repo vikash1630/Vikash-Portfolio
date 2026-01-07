@@ -106,7 +106,7 @@ const Footer = () => {
                 <path fill="#EA4335" d="M22 6H2l10 7z" />
               </svg>
             </a>
-            <span className="text-xs text-gray-600 dark:text-gray-400">Alt Email</span>
+            <span className="text-xs text-gray-600 dark:text-gray-400">Alternate Email</span>
           </div>
 
         </div>
