@@ -78,7 +78,7 @@ const Footer = () => {
           {/* Primary Email — OFFICIAL GMAIL LOGO */}
           <div className="flex flex-col items-center gap-1">
             <a
-              href="mailto:mvikash1630@gmail.com"
+              href="mailto:m.vikash1630@gmail.com"
               className="w-12 h-12 rounded-full bg-gradient-to-br from-fire/20 to-fire/40 
               flex items-center justify-center shadow-md"
             >
