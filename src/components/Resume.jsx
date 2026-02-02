@@ -125,7 +125,7 @@ export default function Resume() {
                         <a
                             href="/MyResume.pdf"
                             download
-                            className="px-5 py-2.5 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-medium text-sm inline-flex items-center gap-2"
+                            className="px-5 py-2.5 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-medium text-sm"
                         >
                             <span>📄</span>
                             <span>Download Resume</span>
