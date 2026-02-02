@@ -15,6 +15,7 @@ import Experience from "./components/Experience";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState("home"); // Default page
@@ -42,6 +43,9 @@ const App = () => {
 
       case "contact":
         return <Contact />;
+        
+      case "resume":
+        return <Resume />;
 
       default:
         return <Hero onSectionChange={setCurrentSection} />;

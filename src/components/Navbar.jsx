@@ -1,4 +1,4 @@
-// Navbar.jsx – GOD-TIER VERSION with Circular GIF Logo + Name beside it
+// Navbar.jsx – GOD-TIER VERSION with Resume + All Features
 
 import { useState, useEffect } from "react";
 import logoGif from "../assets/icons/giflogo.gif"; // your GIF
@@ -25,6 +25,7 @@ const Navbar = ({ onSectionChange, currentSection }) => {
     { name: "Skills", id: "skills" },
     { name: "Projects", id: "projects" },
     { name: "Experience", id: "experience" },
+    { name: "Resume", id: "resume" },  // ✅ NEW: Resume added here
     { name: "Blog", id: "blog" },
     { name: "Contact", id: "contact" },
   ];
