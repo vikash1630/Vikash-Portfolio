@@ -76,13 +76,13 @@ const Blog = () => {
                 </div>
 
                 {/* Read More Button */}
-                <a
+                {/* <a
                   href={post.link}
                   target="_blank"
                   className="inline-block mt-4 px-5 py-2 rounded-full bg-gradient-to-r from-primary to-secondary text-gray-900 font-semibold shadow-md hover:scale-105 transition-all"
                 >
                   Read More →
-                </a>
+                </a> */}
 
               </div>
             </div>
