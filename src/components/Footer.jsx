@@ -57,7 +57,7 @@ const Footer = () => {
           {/* LinkedIn */}
           <div className="flex flex-col items-center gap-1">
             <a
-              href="https://linkedin.com/in/username"
+              href="https://www.linkedin.com/in/mundakar-vikash-0a8a6435b/"
               target="_blank"
               className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary/20 to-secondary/40 
               flex items-center justify-center text-secondary shadow-md"
@@ -90,7 +90,7 @@ const Footer = () => {
                 <path fill="#fbc02d" d="M7 7l17 12 17-12z" />
               </svg>
             </a>
-            <span className="text-xs text-gray-600 dark:text-gray-400">Primary Email</span>
+                <span className="text-xs text-gray-600 dark:text-gray-400 font-medium text-center w-full">Primary Email</span>
           </div>
 
           {/* Alternate Email — DIFFERENT OUTLINE GMAIL LOGO */}
@@ -106,7 +106,7 @@ const Footer = () => {
                 <path fill="#EA4335" d="M22 6H2l10 7z" />
               </svg>
             </a>
-            <span className="text-xs text-gray-600 dark:text-gray-400">Alternate Email</span>
+                <span className="text-xs text-gray-600 dark:text-gray-400 font-medium text-center w-full">Alternate Email</span>
           </div>
 
         </div>
