@@ -86,13 +86,38 @@ const Hero = ({ onSectionChange }) => {
 
           {/* Resume Link */}
          <div className="pt-2 animate-fade-up delay-700">
-            <a
-              href="/resume"
-              className="inline-flex items-center space-x-2 px-5 py-3 bg-fire/20 hover:bg-fire/30 text-fire dark:text-fire-light rounded-full font-medium transition-all hover:scale-105"
-            >
-            <span>View Resume ↗</span>
-            </a>
-          </div>
+  <button
+    onClick={() => onSectionChange("resume")}
+    className="
+      group relative inline-flex items-center justify-center
+      px-6 py-3 font-semibold rounded-full
+      bg-gradient-to-r from-fire/20 via-primary/20 to-secondary/20
+      text-fire dark:text-fire-light
+      backdrop-blur-xl
+      border border-white/20 dark:border-gray-700/40
+      shadow-lg shadow-fire/10
+      overflow-hidden
+      transition-all duration-500
+      hover:scale-110 hover:shadow-fire/30
+      active:scale-95
+    "
+  >
+    {/* 🔥 Animated Gradient Border */}
+    <span className="absolute inset-0 rounded-full p-[1px] bg-gradient-to-r from-primary via-secondary to-fire opacity-0 group-hover:opacity-100 transition duration-500"></span>
+
+    {/* ✨ Shine Sweep */}
+    <span className="absolute left-[-120%] top-0 h-full w-[120%] bg-gradient-to-r from-transparent via-white/30 to-transparent rotate-12 group-hover:left-[120%] transition-all duration-700"></span>
+
+    {/* TEXT + ICON */}
+    <span className="relative flex items-center gap-2 tracking-wide">
+      View Resume
+      <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+        ↗
+      </span>
+    </span>
+  </button>
+</div>
+
 
 
         </div>
