@@ -106,25 +106,25 @@ const resumeData = {
       title: "Local Lynk E commerce app",
       date: "Dec 2025 - Jan 2026",
       description: "Local Lynk: A community-driven e-commerce platform that connects local sellers and buyers, enabling product discovery, secure transactions, and user interaction through integrated community features. Designed with a scalable backend and responsive UI to support real-time engagement and local commerce growth.",
-      link: "https://local-lynk.com"
+      link: "https://local-lynk.vercel.app"
     },
     {
       title: "Solo Levelling Fitness Model App",
       date: "Oct 2025",
       description: "Solo Levelling Fitness Model: A full-stack fitness tracking application that helps users monitor workouts, track progress, and stay consistent through a structured levelling system. Built with a responsive server side rendering, secure authentication, and a scalable backend to deliver a smooth, data-driven fitness experience.",
-      link: "https://solo-levelling.com"
+      link: "https://solo-levelling-fitness-model-app.onrender.com"
     },
     {
       title: "IPL Analytics Dashboard",
       date: "Nov 2025",
       description: "IPL Analytics Dashboard: A data-driven web dashboard built using Flask that visualizes IPL match and player statistics through interactive charts and insights. Designed to process, analyze, and present large datasets efficiently, enabling users to explore performance trends and make data-backed observations.",
-      link: "https://ipl-analytics.com"
+      link: "https://ipl-analytics-dashboard-htof.onrender.com"
     },
     {
       title: "Advanced Notes App",
       date: "Aug 2025",
       description: "Advanced Notes App: A full-stack notes management application that allows users to create, edit, organize, and securely store notes with real-time updates. Built with authentication, optimized data handling, and a responsive interface to ensure fast, reliable, and user-friendly note management.",
-      link: "https://notes-app.com"
+      link: "https://notes-app-mwwd.onrender.com"
     }
     // Add more projects here following the same format
   ],
