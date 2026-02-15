@@ -84,13 +84,13 @@ const Hero = ({ onSectionChange }) => {
             </button>
           </div>
 
-          {/* Resume Download */}
+          {/* Resume Link */}
           <div className="pt-2 animate-fade-up delay-700">
             <Link
               to="/resume"
               className="inline-flex items-center space-x-2 px-5 py-3 bg-fire/20 hover:bg-fire/30 text-fire dark:text-fire-light rounded-full font-medium transition-all hover:scale-105"
             >
-                <span>View Resume</span>
+                <span>View Resume ↗</span>
             </Link>
           </div>
 
