@@ -6,6 +6,7 @@ import iplImg from "../assets/icons/ipl.png";
 import assessmentImg from "../assets/icons/speakingassessment.jpg";
 import financeImg from "../assets/icons/financetracker.jpg";
 import notesImg from "../assets/icons/notesLogo.png";
+import dashboardImg from "../assets/icons/dash.png";
 
 export const projectsData = [
     {
@@ -47,6 +48,27 @@ export const projectsData = [
 
     {
         id: 3,
+        title: "Admin Analytics Dashboard",
+        description:
+            "A modern analytics dashboard designed to visualize system metrics and churn analysis using interactive charts. The application includes multiple chart types, theme switching, responsive UI, and real-time API data to help administrators monitor performance and make data-driven decisions.",
+        technologies: [
+            "React (Vite)",
+            "Tailwind CSS",
+            "Recharts",
+            "Axios",
+            "React Router",
+            "Lucide Icons"
+        ],
+        liveLinks: {
+            primary: "https://frontendhackathon-olive.vercel.app/",
+            secondary: "https://frontendhackathon-olive.vercel.app/",
+        },
+        githubLink: "https://github.com/vikash1630/FRONTEND-HACKATHON.git",
+        image: dashboardImg,
+    },
+
+    {
+        id: 4,
         title: "IPL Analytics Dashboard",
         description:
             "A full analytics tool with IPL match stats, team performance, player insights, win probability, interactive charts, and advanced filtering using Flask + React.",
@@ -71,7 +93,7 @@ export const projectsData = [
 
 
     {
-        id: 4,
+        id: 5,
         title: "Personal Finance Tracker",
         description:
             "A smart finance tracking application where users can log transactions, manage expenses, visualize total spending, and maintain personal profiles. Built using Express, MongoDB, and EJS for seamless server-side rendering.",
@@ -85,7 +107,7 @@ export const projectsData = [
     },
 
     {
-        id: 5,
+        id: 6,
         title: "Student Assessment Report System",
         description:
             "A fast and responsive web tool for generating student performance reports. Includes grade calculation, real-time validation, and printable report cards.",
@@ -99,7 +121,7 @@ export const projectsData = [
     },
 
     {
-        id: 6,
+        id: 7,
         title: "Advanced Notes Management App",
         description:
             "A feature-rich and beautifully designed notes application with pinning, archiving, live search, category filters, and smooth UI animations. Fully responsive and powered by React, Tailwind CSS, and LocalStorage for instant, offline-friendly note management.",
