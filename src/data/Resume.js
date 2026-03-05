@@ -125,6 +125,24 @@ const resumeData = {
       date: "Aug 2025",
       description: "Advanced Notes App: A full-stack notes management application that allows users to create, edit, organize, and securely store notes with real-time updates. Built with authentication, optimized data handling, and a responsive interface to ensure fast, reliable, and user-friendly note management.",
       link: "https://notes-app-mwwd.onrender.com"
+    },
+    {
+      title: "Admin Analytics Dashboard",
+      date: "Feb 2026",
+      description: "Admin Analytics Dashboard: A modern analytics dashboard built with React and Vite that visualizes system metrics and churn analysis through interactive charts. Includes multiple chart types, responsive UI, dark/light theme support, and real-time API data to help administrators monitor system performance and make data-driven decisions.",
+      link: "https://frontendhackathon-olive.vercel.app/"
+    },
+    {
+      title: "Personal Finance Tracker",
+      date: "Jan 2026",
+      description: "Personal Finance Tracker: A full-stack finance tracking application that allows users to log transactions, manage expenses, and visualize spending patterns. Built with Express, MongoDB, and EJS using server-side rendering to deliver fast and secure financial tracking with authentication and responsive UI.",
+      link: "https://personal-finance-tracker-qofe.onrender.com"
+    },
+    {
+      title: "Student Assessment Report System",
+      date: "Sep 2025",
+      description: "Student Assessment Report System: A responsive web application designed to generate student performance reports with automated grade calculation, real-time validation, and printable report cards. Built using HTML, CSS, JavaScript, and Tailwind CSS for a fast and intuitive interface.",
+      link: "https://your-domain.com/student-report"
     }
     // Add more projects here following the same format
   ],
