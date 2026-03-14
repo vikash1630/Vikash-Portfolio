@@ -109,6 +109,12 @@ const resumeData = {
       link: "https://local-lynk.vercel.app"
     },
     {
+      title: "RailPulse – Railway Data Analytics Platform",
+      date: "Mar 2026",
+      description: "RailPulse: A full-stack railway analytics platform that visualizes train performance, demand patterns, revenue insights, and infrastructure statistics across the railway network. The system provides interactive dashboards, route intelligence, and real-time analytics using a scalable backend API. Built with React, Tailwind CSS, and Vite for a responsive frontend, Flask for backend APIs, and MongoDB Atlas for data storage, deployed using Vercel and Render.",
+      link: "https://rail-pulse-5t74.vercel.app/"
+    },
+    {
       title: "Solo Levelling Fitness Model App",
       date: "Oct 2025",
       description: "Solo Levelling Fitness Model: A full-stack fitness tracking application that helps users monitor workouts, track progress, and stay consistent through a structured levelling system. Built with a responsive server side rendering, secure authentication, and a scalable backend to deliver a smooth, data-driven fitness experience.",
