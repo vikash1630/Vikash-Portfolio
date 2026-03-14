@@ -43,7 +43,7 @@ export const projectsData = [
             secondary: "https://rail-pulse-backend.onrender.com",
         },
         githubLink: "https://github.com/vikash1630/Rail-Pulse",
-        image: railPulseImg, // replace with your imported project image
+        image: RailPulse, // replace with your imported project image
     },
     {
         id: 3,
