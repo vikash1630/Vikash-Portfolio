@@ -7,6 +7,7 @@ import assessmentImg from "../assets/icons/speakingassessment.jpg";
 import financeImg from "../assets/icons/financetracker.jpg";
 import notesImg from "../assets/icons/notesLogo.png";
 import dashboardImg from "../assets/icons/dash.png";
+import RailPulse from "../assets/icons/RailPulse.png";
 
 export const projectsData = [
     {
@@ -22,9 +23,30 @@ export const projectsData = [
         githubLink: "https://github.com/vikash1630/Solo-Levelling-Fitness-Model-App.git",
         image: soloImg,
     },
-
     {
         id: 2,
+        title: "RailPulse – Railway Data Analytics Platform",
+        description:
+            "A full-stack railway analytics platform that visualizes train performance, demand trends, revenue insights, and infrastructure statistics across the railway network. Features interactive dashboards, route intelligence, and real-time analytics powered by a scalable backend API. Built with React and Tailwind CSS for a fast responsive UI, Flask for backend services, and MongoDB Atlas for data storage, deployed on Vercel and Render.",
+        technologies: [
+            "React",
+            "Vite",
+            "Tailwind CSS",
+            "Flask",
+            "MongoDB Atlas",
+            "REST API",
+            "Vercel",
+            "Render"
+        ],
+        liveLinks: {
+            primary: "https://rail-pulse-5t74.vercel.app/",
+            secondary: "https://rail-pulse-backend.onrender.com",
+        },
+        githubLink: "https://github.com/vikash1630/Rail-Pulse",
+        image: railPulseImg, // replace with your imported project image
+    },
+    {
+        id: 3,
         title: "E-Commerce Platform",
         description:
             "A full-stack e-commerce platform with cart system, payments, admin panel, product management, order management, JWT Auth, and Tailwind UI.",
@@ -47,7 +69,7 @@ export const projectsData = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Admin Analytics Dashboard",
         description:
             "A modern analytics dashboard designed to visualize system metrics and churn analysis using interactive charts. The application includes multiple chart types, theme switching, responsive UI, and real-time API data to help administrators monitor performance and make data-driven decisions.",
@@ -68,7 +90,7 @@ export const projectsData = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "IPL Analytics Dashboard",
         description:
             "A full analytics tool with IPL match stats, team performance, player insights, win probability, interactive charts, and advanced filtering using Flask + React.",
@@ -93,7 +115,7 @@ export const projectsData = [
 
 
     {
-        id: 5,
+        id: 6,
         title: "Personal Finance Tracker",
         description:
             "A smart finance tracking application where users can log transactions, manage expenses, visualize total spending, and maintain personal profiles. Built using Express, MongoDB, and EJS for seamless server-side rendering.",
@@ -107,7 +129,7 @@ export const projectsData = [
     },
 
     {
-        id: 6,
+        id: 7,
         title: "Student Assessment Report System",
         description:
             "A fast and responsive web tool for generating student performance reports. Includes grade calculation, real-time validation, and printable report cards.",
@@ -121,7 +143,7 @@ export const projectsData = [
     },
 
     {
-        id: 7,
+        id: 8,
         title: "Advanced Notes Management App",
         description:
             "A feature-rich and beautifully designed notes application with pinning, archiving, live search, category filters, and smooth UI animations. Fully responsive and powered by React, Tailwind CSS, and LocalStorage for instant, offline-friendly note management.",
