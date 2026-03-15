@@ -114,53 +114,6 @@ export const projectsData = [
 
 
 
-    {
-        id: 6,
-        title: "Personal Finance Tracker",
-        description:
-            "A smart finance tracking application where users can log transactions, manage expenses, visualize total spending, and maintain personal profiles. Built using Express, MongoDB, and EJS for seamless server-side rendering.",
-        technologies: ["Node.js", "Express", "EJS", "MongoDB", "SSR", "JWT Auth", "Tailwind CSS"],
-        liveLinks: {
-            primary: "https://personal-finance-tracker-qofe.onrender.com",
-            secondary: "https://personal-finance-tracker-qofe.onrender.com",
-        },
-        githubLink: "https://github.com/vikash1630/Personal-Finance-Tracker.git",
-        image: financeImg, // replace with your imported image variable
-    },
-
-    {
-        id: 7,
-        title: "Student Assessment Report System",
-        description:
-            "A fast and responsive web tool for generating student performance reports. Includes grade calculation, real-time validation, and printable report cards.",
-        technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-        liveLinks: {
-            primary: "https://your-domain.com/student-report",
-            secondary: "https://student-report-backup.com",
-        },
-        githubLink: "https://github.com/yourusername/student-report",
-        image: assessmentImg,
-    },
-
-    {
-        id: 8,
-        title: "Advanced Notes Management App",
-        description:
-            "A feature-rich and beautifully designed notes application with pinning, archiving, live search, category filters, and smooth UI animations. Fully responsive and powered by React, Tailwind CSS, and LocalStorage for instant, offline-friendly note management.",
-        technologies: [
-            "React",
-            "React Router",
-            "Tailwind CSS",
-            "LocalStorage",
-            "Vite"
-        ],
-        liveLinks: {
-            primary: "https://notes-app-mwwd.onrender.com",
-            secondary: "https://notes-app-mwwd.onrender.com",
-        },
-        githubLink: "https://github.com/vikash1630/Notes-App.git",
-        image: notesImg, // replace with your imported image
-    }
 
 
     
