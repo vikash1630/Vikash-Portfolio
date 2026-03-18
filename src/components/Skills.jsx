@@ -28,6 +28,14 @@ const icons = {
     Git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     Render: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
     Vercel: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+
+    // 🔹 Added Missing Skills
+    "Responsive Design": "https://cdn-icons-png.flaticon.com/512/1006/1006363.png",
+    "REST API Integration": "https://cdn-icons-png.flaticon.com/512/2165/2165004.png",
+    Vite: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+    "REST API Development": "https://cdn-icons-png.flaticon.com/512/2165/2165004.png",
+    "JWT Authentication": "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+    "CORS Handling": "https://cdn-icons-png.flaticon.com/512/565/565547.png",
 };
 
 const categoryColors = {
