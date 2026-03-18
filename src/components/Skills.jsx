@@ -24,7 +24,8 @@ const icons = {
     C: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
     Postman: "https://seeklogo.com/images/P/postman-api-platform-logo-D6B8AB9B0D-seeklogo.com.png",
 
-    MongoDB: "https://velog.velcdn.com/images/myong/post/7c8de4c9-a41f-47fc-b73c-63550f86d1f6/mongo_atlas.png",
+    MongoDB: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "MongoDB Atlas": "https://cdn.simpleicons.org/mongodb/47A248",
 
     Git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     Render: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
