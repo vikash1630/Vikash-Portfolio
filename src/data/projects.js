@@ -22,8 +22,8 @@ export const projectsData = [
         },
         githubLink: "https://github.com/vikash1630/Solo-Levelling-Fitness-Model-App.git",
         image: soloImg,
-        level: 3,
-        standard: "Advanced",
+        level: 5,
+        standard: "Industry",
     },
     {
         id: 2,
@@ -70,8 +70,8 @@ export const projectsData = [
         },
         githubLink: "https://github.com/vikash1630/Local-Lynk.git",
         image: ecommerceImg,
-        level: 4,
-        standard: "Production",
+        level: 5,
+        standard: "Industry",
     },
 
     {
@@ -93,8 +93,8 @@ export const projectsData = [
         },
         githubLink: "https://github.com/vikash1630/FRONTEND-HACKATHON.git",
         image: dashboardImg,
-        level: 3,
-        standard: "Advanced",
+        level: 4,
+        standard: "Production",
     },
 
     {
@@ -118,7 +118,7 @@ export const projectsData = [
         },
         githubLink: "https://github.com/vikash1630/IPL-analytics-dashboard.git",
         image: iplImg,
-        level: 4,
-        standard: "Production",
+        level: 3,
+        standard: "Advanced",
     },
 ];
