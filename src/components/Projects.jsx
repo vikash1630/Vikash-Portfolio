@@ -378,14 +378,17 @@ const StatPill = ({ value, label, dark }) => (
     }}
   >
     <span
-      className="font-black text-xl leading-none"
+      className="font-black text-xl leading-none transition-colors duration-300"
       style={{
         fontFamily: "'Clash Display', sans-serif",
-        background: dark
+        // Changed to 'backgroundImage' to prevent the background clipping flash
+        backgroundImage: dark
           ? "linear-gradient(135deg, #c4b5fd, #67e8f9)"
           : "linear-gradient(135deg, #6366f1, #06b6d4)",
         WebkitBackgroundClip: "text",
+        backgroundClip: "text",
         WebkitTextFillColor: "transparent",
+        color: "transparent",
       }}
     >
       {value}
@@ -458,18 +461,6 @@ const Projects = () => {
           }}
         />
 
-        {/* Fine grid */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: dark
-              ? `linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px)`
-              : `linear-gradient(rgba(0,0,0,0.035) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px)`,
-            backgroundSize: "48px 48px",
-          }}
-        />
 
         {/* Floating Bubbles */}
         {bubbles.map((b, i) => {
