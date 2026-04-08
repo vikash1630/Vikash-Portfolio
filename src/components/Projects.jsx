@@ -443,8 +443,10 @@ const Projects = () => {
       className="relative py-28 px-4 sm:px-8 lg:px-16 overflow-hidden"
       style={{
         background: dark
-          ? "linear-gradient(180deg, #020509 0%, #050d1e 45%, #07101f 75%, #020509 100%)"
-          : "linear-gradient(180deg, #eef2ff 0%, #fafafe 45%, #f0fdf9 75%, #fff7f9 100%)",
+          // Starts exact match with Navbar's gray-900 (#111827) and fades into deep slate
+          ? "linear-gradient(180deg, #111827 0%, #0f172a 45%, #0B1121 75%, #111827 100%)"
+          // Starts exact match with Navbar's white (#ffffff) and fades into soft slate-50
+          : "linear-gradient(180deg, #ffffff 0%, #f8fafc 45%, #f1f5f9 75%, #ffffff 100%)",
         transition: "background 0.4s ease",
       }}
     >
