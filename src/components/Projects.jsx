@@ -544,20 +544,25 @@ const Projects = () => {
               <span
                 className="block"
                 style={{
-                  background: dark
+                  // Changed 'background' to 'backgroundImage' to prevent the clipping flash
+                  backgroundImage: dark
                     ? "linear-gradient(135deg, #c4b5fd 0%, #67e8f9 50%, #86efac 100%)"
                     : "linear-gradient(135deg, #4f46e5 0%, #0891b2 50%, #059669 100%)",
                   WebkitBackgroundClip: "text",
+                  backgroundClip: "text", // Added standard property for broader support
                   WebkitTextFillColor: "transparent",
+                  color: "transparent", // Fallback to ensure text stays transparent
                 }}
               >
                 Featured
               </span>
               <span
-                className="block mt-1 relative"
+                className="block mt-1 relative transition-colors duration-300"
                 style={{
-                  WebkitTextStroke: dark ? "1.5px rgba(255,255,255,0.07)" : "1.5px rgba(0,0,0,0.07)",
-                  color: "transparent",
+                  // Increased stroke opacity and thickness for better visibility
+                  WebkitTextStroke: dark ? "2px rgba(255, 255, 255, 0.35)" : "2px rgba(15, 23, 42, 0.6)",
+                  // Added a very subtle fill instead of completely transparent
+                  color: dark ? "rgba(255, 255, 255, 0.05)" : "rgba(15, 23, 42, 0.03)",
                   letterSpacing: "-0.02em",
                 }}
               >
