@@ -82,21 +82,36 @@ const useIntersection = (threshold = 0.08) => {
 };
 
 const useIsDark = () => {
-  const [dark, setDark] = useState(
-    () =>
-      document.documentElement.classList.contains("dark") ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+  const [dark, setDark] = useState(() => {
+    // Safe initialization
+    if (typeof window === "undefined") return false;
+    return document.documentElement.classList.contains("dark");
+  });
+
   useEffect(() => {
-    const obs = new MutationObserver(() =>
-      setDark(document.documentElement.classList.contains("dark"))
-    );
-    obs.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-    const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    const handler = (e) => setDark(e.matches);
-    mq.addEventListener("change", handler);
-    return () => { obs.disconnect(); mq.removeEventListener("change", handler); };
+    const root = document.documentElement;
+
+    // Function to strictly sync state with the HTML class
+    const syncTheme = () => {
+      setDark(root.classList.contains("dark"));
+    };
+
+    // 1. MutationObserver: Watches the <html> tag like a hawk for class changes
+    const observer = new MutationObserver(syncTheme);
+    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
+
+    // 2. Custom Event Listener: Optional fallback if you broadcast events
+    window.addEventListener("themeChange", syncTheme);
+
+    // Initial sync just in case it changed during hydration
+    syncTheme();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("themeChange", syncTheme);
+    };
   }, []);
+
   return dark;
 };
 
