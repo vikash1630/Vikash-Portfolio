@@ -26,7 +26,7 @@ const Navbar = ({ onSectionChange, currentSection }) => {
     { name: "Projects", id: "projects" },
     { name: "Experience", id: "experience" },
     { name: "Resume", id: "resume" },  // ✅ NEW: Resume added here
-    { name: "Blog", id: "blog" },
+    // { name: "Blog", id: "blog" },
     { name: "Contact", id: "contact" },
   ];
 
