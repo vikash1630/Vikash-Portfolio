@@ -1,7 +1,7 @@
 // Navbar.jsx – GOD-TIER VERSION with Resume + All Features
 
 import { useState, useEffect } from "react";
-import logoGif from "../assets/icons/giflogo.gif"; // your GIF
+import logoGif from "../assets/icons/profile.gif"; // your GIF
 
 const Navbar = ({ onSectionChange, currentSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
