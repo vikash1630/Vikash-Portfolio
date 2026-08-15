@@ -3,7 +3,7 @@
 // Navbar and Hero use onSectionChange("sectionName")
 // Only one section renders at a time
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -20,6 +20,13 @@ import Resume from "./components/Resume";
 const App = () => {
   const [currentSection, setCurrentSection] = useState("home"); // Default page
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [currentSection]);
+  
   // Controls which component is visible
   const renderSection = () => {
     switch (currentSection) {
