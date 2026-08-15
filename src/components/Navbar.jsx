@@ -6,7 +6,7 @@ import logoGif from "../assets/icons/giflogo.gif"; // your GIF
 const Navbar = ({ onSectionChange, currentSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 40);
