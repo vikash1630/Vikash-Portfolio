@@ -1,14 +1,47 @@
 // Contact.jsx — Fully Improved Version (FormSubmit + Fixed Email Section)
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState("");
+  const phoneRef = useRef(null);
 
   const handleSubmit = (e) => {
     setFormStatus("Sending...");
     setTimeout(() => setFormStatus("Message sent successfully!"), 2000);
   };
+
+  // Mouse-reactive spotlight on the phone button — same approach as the
+  // Hero cursor glow: desktop-only (pointer: fine), rAF-batched, and only
+  // ever touches CSS custom properties so nothing but compositing happens.
+  useEffect(() => {
+    const isDesktop = window.matchMedia("(pointer: fine)").matches;
+    const el = phoneRef.current;
+    if (!isDesktop || !el) return;
+
+    let raf = null;
+    let pending = null;
+
+    const applyMove = () => {
+      if (pending) {
+        el.style.setProperty("--mx", `${pending.x}px`);
+        el.style.setProperty("--my", `${pending.y}px`);
+      }
+      raf = null;
+    };
+
+    const handleMove = (e) => {
+      const rect = el.getBoundingClientRect();
+      pending = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      if (!raf) raf = requestAnimationFrame(applyMove);
+    };
+
+    el.addEventListener("mousemove", handleMove);
+    return () => {
+      el.removeEventListener("mousemove", handleMove);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <section
@@ -117,11 +150,28 @@ const Contact = () => {
           </div>
         </form>
 
-        {/* Direct Email Section - FIXED */}
-        <div className="text-center mt-12 animate-fade-up delay-400">
-          <p className="text-gray-600 dark:text-gray-400 mb-3">
+        {/* Direct Contact Section */}
+        <div className="text-center mt-14 animate-fade-up delay-400">
+          <p className="text-gray-600 dark:text-gray-400 mb-5">
             You can also reach me directly:
           </p>
+
+          {/* PHONE — clean by default, lights up as the cursor moves over it */}
+          <a
+            ref={phoneRef}
+            href="tel:+919573696792"
+            className="phone-cta group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl
+            bg-gradient-to-r from-emerald-600 to-teal-600
+            text-white font-bold text-lg sm:text-xl tracking-wide
+            shadow-md overflow-hidden mb-8
+            transition-transform duration-300 hover:scale-[1.03] active:scale-95"
+          >
+            {/* Cursor-follow spotlight — opacity-only, appears on hover */}
+            <span className="phone-spotlight absolute inset-0 rounded-2xl pointer-events-none" aria-hidden="true" />
+
+            <span className="relative text-xl">📞</span>
+            <span className="relative">+91 95736 96792</span>
+          </a>
 
           {/* EMAIL CARDS */}
           <div className="flex flex-col items-center gap-2">
@@ -165,6 +215,26 @@ const Contact = () => {
 
         .animate-fade-up { animation: fade-up 0.9s ease-out forwards; }
         .animate-orb { animation: orb 6s infinite ease-in-out; }
+
+        /* Phone CTA — no constant motion at rest. The only thing that moves
+           is the spotlight, and only in response to the mouse. */
+        .phone-cta {
+          --mx: 50%;
+          --my: 50%;
+        }
+        .phone-spotlight {
+          opacity: 0;
+          background: radial-gradient(140px circle at var(--mx) var(--my), rgba(255,255,255,0.35), transparent 70%);
+          transition: opacity 0.35s ease;
+        }
+        .phone-cta:hover .phone-spotlight,
+        .phone-cta:focus-visible .phone-spotlight {
+          opacity: 1;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .phone-spotlight { transition: none; }
+        }
       `}</style>
     </section>
   );

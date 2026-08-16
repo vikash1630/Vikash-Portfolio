@@ -4,7 +4,6 @@ import resumeData from '../data/Resume.js';
 
 export default function Resume() {
     const [scrollProgress, setScrollProgress] = useState(0);
-    const [activeStation, setActiveStation] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -13,19 +12,6 @@ export default function Resume() {
                 document.documentElement.scrollHeight - window.innerHeight;
             const progress = (scrollTop / docHeight) * 100;
             setScrollProgress(progress);
-
-            const sections = ['objective', 'education', 'projects', 'skills'];
-            const sectionElements = sections.map((id) =>
-                document.getElementById(id)
-            );
-
-            sectionElements.forEach((el, idx) => {
-                if (!el) return;
-                const rect = el.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-                    setActiveStation(idx);
-                }
-            });
         };
 
         handleScroll(); // Call once on mount
@@ -44,8 +30,16 @@ export default function Resume() {
     }));
 
     return (
-        <div className="min-h-screen relative overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-500">
-            
+        // ── Background-bleed fix ──
+        // <main> in App.jsx adds pt-20/md:pt-24 above this section, and
+        // Footer.jsx adds mt-20 below it. Both of those gaps sit OUTSIDE this
+        // component's own element, so they show App.jsx's root background
+        // (dark:bg-gray-950) instead of this page's own bg-gray-900 — that's
+        // the visible seam. Negative margins pull this page's background
+        // up/down to cover those gaps, and matching padding is added back so
+        // the header and content keep their original on-screen position.
+        <div className="min-h-screen relative overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-500 -mt-20 md:-mt-24 -mb-20 pt-20 md:pt-24 pb-20">
+
             {/* Animated Background - Matching Experience.jsx style */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Subtle gradient orbs */}
@@ -169,54 +163,6 @@ export default function Resume() {
                                     <div className="absolute inset-0 bg-orange-400 dark:bg-orange-300 blur-xl opacity-30 animate-pulse" />
                                 </div>
                             </div>
-
-                            {/* Target Stations - distributed along full height */}
-                            {['objective', 'education', 'projects', 'skills'].map((section, idx) => {
-                                // Calculate position based on section's actual position on page
-                                const sectionEl = typeof document !== 'undefined' ? document.getElementById(section) : null;
-                                let topPosition = `${(idx + 1) * 20}%`; // default fallback
-                                
-                                if (sectionEl) {
-                                    const rect = sectionEl.getBoundingClientRect();
-                                    const scrollTop = window.scrollY;
-                                    const sectionTop = rect.top + scrollTop;
-                                    const pageHeight = document.documentElement.scrollHeight;
-                                    const percentage = (sectionTop / pageHeight) * 100;
-                                    topPosition = `${percentage}%`;
-                                }
-                                
-                                return (
-                                    <div
-                                        key={idx}
-                                        className="absolute left-1/2 -translate-x-1/2 transition-all duration-500"
-                                        style={{ top: topPosition }}
-                                    >
-                                    {/* Outer ring */}
-                                    <div
-                                        className={`w-12 h-12 rounded-full border-4 transition-all duration-500 ${activeStation === idx
-                                                ? 'border-orange-500 dark:border-orange-400 scale-110 shadow-lg shadow-orange-500/50'
-                                                : 'border-slate-300 dark:border-slate-600'
-                                            }`}
-                                    >
-                                        {/* Middle ring */}
-                                        <div
-                                            className={`w-full h-full rounded-full border-4 transition-all duration-500 ${activeStation === idx
-                                                    ? 'border-red-500 dark:border-red-400 scale-75'
-                                                    : 'border-slate-200 dark:border-slate-700'
-                                                }`}
-                                        >
-                                            {/* Bullseye */}
-                                            <div
-                                                className={`w-full h-full rounded-full flex items-center justify-center transition-all duration-500 ${activeStation === idx
-                                                        ? 'bg-gradient-to-br from-yellow-400 to-orange-500 scale-50 shadow-inner'
-                                                        : 'bg-slate-100 dark:bg-slate-800 scale-50'
-                                                    }`}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            );
-                            })}
                         </div>
                     </aside>
 

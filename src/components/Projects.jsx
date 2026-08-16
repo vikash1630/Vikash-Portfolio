@@ -427,7 +427,16 @@ const ProjectsInner = () => {
   return (
     <section
       id="projects"
-      className="relative py-28 px-4 sm:px-8 lg:px-16 overflow-hidden"
+      // ── Background-bleed fix ──
+      // <main> in App.jsx adds pt-20/md:pt-24 above this section, and
+      // Footer.jsx adds mt-20 below it. Both of those gaps sit OUTSIDE this
+      // section's own element, so they show App.jsx's root background
+      // (dark:bg-gray-950) instead of this section's gradient
+      // (#111827/gray-900) — that's the visible seam.
+      // Negative margins pull this section's background up/down to cover
+      // those gaps, and matching padding is added back so the header and
+      // card grid keep their original on-screen position.
+      className="relative -mt-20 md:-mt-24 -mb-20 pt-[12rem] md:pt-[13rem] pb-[12rem] px-4 sm:px-8 lg:px-16 overflow-hidden"
       style={{
         background: dark
           ? "linear-gradient(180deg, #111827 0%, #0f172a 45%, #0B1121 75%, #111827 100%)"
