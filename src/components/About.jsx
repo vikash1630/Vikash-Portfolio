@@ -144,7 +144,7 @@ const About = () => {
             className={`about-stat-card scale-fade delay-300 ${isVisible ? "is-visible" : ""} p-4 sm:p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg border border-primary/20`}
           >
             <h3 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              3
+              3+
             </h3>
             <p className="text-gray-700 dark:text-gray-400 mt-1 text-xs sm:text-sm">
               Full-Stack Projects Shipped
@@ -155,7 +155,7 @@ const About = () => {
             className={`about-stat-card scale-fade delay-400 ${isVisible ? "is-visible" : ""} p-4 sm:p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg border border-secondary/20`}
           >
             <h3 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-secondary to-fire bg-clip-text text-transparent">
-              320+
+              500+
             </h3>
             <p className="text-gray-700 dark:text-gray-400 mt-1 text-xs sm:text-sm">
               DSA Problems Solved
@@ -177,10 +177,10 @@ const About = () => {
             className={`about-stat-card scale-fade delay-600 ${isVisible ? "is-visible" : ""} p-4 sm:p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg border border-grass/20`}
           >
             <h3 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-grass to-primary bg-clip-text text-transparent">
-              2
+              2+
             </h3>
             <p className="text-gray-700 dark:text-gray-400 mt-1 text-xs sm:text-sm">
-              Hackathon Placements
+              Hackathon
             </p>
           </div>
         </div>
