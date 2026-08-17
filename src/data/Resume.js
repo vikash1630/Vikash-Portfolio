@@ -144,12 +144,12 @@ const resumeData = {
       description: "Personal Finance Tracker: A full-stack finance tracking application that allows users to log transactions, manage expenses, and visualize spending patterns. Built with Express, MongoDB, and EJS using server-side rendering to deliver fast and secure financial tracking with authentication and responsive UI.",
       link: "https://personal-finance-tracker-qofe.onrender.com"
     },
-    {
-      title: "Student Assessment Report System",
-      date: "Sep 2025",
-      description: "Student Assessment Report System: A responsive web application designed to generate student performance reports with automated grade calculation, real-time validation, and printable report cards. Built using HTML, CSS, JavaScript, and Tailwind CSS for a fast and intuitive interface.",
-      link: "https://your-domain.com/student-report"
-    }
+    // {
+    //   title: "Student Assessment Report System",
+    //   date: "Sep 2025",
+    //   description: "Student Assessment Report System: A responsive web application designed to generate student performance reports with automated grade calculation, real-time validation, and printable report cards. Built using HTML, CSS, JavaScript, and Tailwind CSS for a fast and intuitive interface.",
+    //   link: "https://your-domain.com/student-report"
+    // }
     // Add more projects here following the same format
   ],
 
