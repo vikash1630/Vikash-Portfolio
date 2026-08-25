@@ -6,7 +6,10 @@ import logoGif from "../assets/icons/profile.gif"; // your GIF
 const Navbar = ({ onSectionChange, currentSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === null ? false : saved === "true";
+  });
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 40);
@@ -15,8 +18,13 @@ const Navbar = ({ onSectionChange, currentSection }) => {
   }, []);
 
   useEffect(() => {
-    if (isDarkMode) document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    localStorage.setItem("darkMode", isDarkMode);
   }, [isDarkMode]);
 
   const navItems = [
