@@ -8,6 +8,11 @@ const Navbar = ({ onSectionChange, currentSection }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
+    
+    // Default is Dark Mode
+    // return saved === null ? true : saved === "true";
+  
+    // Default is light mode
     return saved === null ? false : saved === "true";
   });
 
