@@ -1,65 +1,92 @@
 // blog.js - Your blog posts or articles
-// REPLACE: Add your actual blog posts or articles
+// Tags refined to 2-3 per post for better classification and readability
 
 export const blogData = [
   {
-    id: 1,
-    title: "Getting Started with React and Vite",
-    excerpt: "Learn how to set up a modern React development environment using Vite for lightning-fast builds and hot module replacement.",
-    date: "December 15, 2024",
-    readTime: "5 min read",
-    link: "https://medium.com/@yourusername/react-vite-guide", // REPLACE WITH YOUR ACTUAL BLOG LINK
-    image: "https://via.placeholder.com/400x250/FFD700/000000?text=React+Vite", // REPLACE WITH ACTUAL IMAGE
-    tags: ["React", "Vite", "Web Development"],
+    id: "React",
+    title: "React Working Flow: From Components to UI",
+    excerpt: "From JSX to the real DOM — full flow.",
+    date: "2026",
+    readTime: "10 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/React",
+    image: "/React1.png",
+    tags: ["React", "JavaScript", "Web Development"],
   },
+
   {
-    id: 2,
-    title: "Building RESTful APIs with Node.js and Express",
-    excerpt: "A comprehensive guide to creating scalable and secure REST APIs using Node.js, Express, and MongoDB with best practices.",
-    date: "November 28, 2024",
+    id: "dsa-cheatsheet",
+    title: "DSA Pattern Recognition Cheat Sheet",
+    excerpt: "25 patterns, clues, and recognition tricks.",
+    date: "2026",
     readTime: "8 min read",
-    link: "https://medium.com/@yourusername/nodejs-express-api", // REPLACE WITH YOUR ACTUAL BLOG LINK
-    image: "https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=Node.js+API", // REPLACE WITH ACTUAL IMAGE
-    tags: ["Node.js", "Express", "Backend"],
+    link: "https://myblogs-umber.vercel.app/blogs/dsa-cheatsheet",
+    image: "/dsa.png",
+    tags: ["DSA", "Algorithms", "Problem Solving"],
   },
+
   {
-    id: 3,
-    title: "Mastering Tailwind CSS: Tips and Tricks",
-    excerpt: "Discover advanced Tailwind CSS techniques to build beautiful, responsive designs faster with utility-first approach.",
-    date: "November 10, 2024",
-    readTime: "6 min read",
-    link: "https://medium.com/@yourusername/tailwind-tips", // REPLACE WITH YOUR ACTUAL BLOG LINK
-    image: "https://via.placeholder.com/400x250/66BB6A/FFFFFF?text=Tailwind+CSS", // REPLACE WITH ACTUAL IMAGE
-    tags: ["CSS", "Tailwind", "UI/UX"],
+    id: "CN-part-1",
+    title: "Computer Networks Part 1: From Bits to NAT",
+    excerpt: "Bits, frames, IPs, routers, and NAT.",
+    date: "2026",
+    readTime: "9 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/CN-part-1",
+    image: "/CN1.png",
+    tags: ["Computer Networks", "Networking", "IP"],
   },
+
   {
-    id: 4,
-    title: "Understanding MongoDB: NoSQL Database Fundamentals",
-    excerpt: "Dive deep into MongoDB basics, schema design, queries, and how to integrate it with your Node.js applications.",
-    date: "October 22, 2024",
-    readTime: "7 min read",
-    link: "https://medium.com/@yourusername/mongodb-guide", // REPLACE WITH YOUR ACTUAL BLOG LINK
-    image: "https://via.placeholder.com/400x250/FF6B35/FFFFFF?text=MongoDB", // REPLACE WITH ACTUAL IMAGE
-    tags: ["MongoDB", "Database", "NoSQL"],
+    id: "CN-part-2",
+    title: "Computer Networks Part 2: Transport Layer, Ports & Sockets",
+    excerpt: "Ports, sockets, TCP, UDP, and NAT mapping.",
+    date: "2026",
+    readTime: "8 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/CN-part-2",
+    image: "/CN2.png",
+    tags: ["Computer Networks", "TCP", "UDP"],
+  },
+
+  {
+    id: "CN-part-3",
+    title: "Computer Networks Part 3: TCP Reliability & Congestion Control",
+    excerpt: "Handshakes, ACKs, windows, and congestion.",
+    date: "2026",
+    readTime: "10 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/CN-part-3",
+    image: "/CN3.png",
+    tags: ["Computer Networks", "TCP", "Congestion Control"],
+  },
+
+  {
+    id: "CN-part-4",
+    title: "Computer Networks Part 4: DNS, HTTP, HTTPS & CDN",
+    excerpt: "DNS, HTTP, TLS, caching, and CDNs.",
+    date: "2026",
+    readTime: "8 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/CN-part-4",
+    image: "/CN4.png",
+    tags: ["Computer Networks", "HTTP", "DNS"],
+  },
+
+  {
+    id: "CN-part-5",
+    title: "Computer Networks Part 5: Proxies, Architecture & Network Security",
+    excerpt: "Proxies, load balancers, security, and CORS.",
+    date: "2026",
+    readTime: "9 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/CN-part-5",
+    image: "/CN5.png",
+    tags: ["Computer Networks", "System Design", "Security"],
+  },
+
+  {
+    id: "SystemDesign-part-1",
+    title: "System Design Fundamentals & Networking",
+    excerpt: "Scalability, DNS, REST, databases, and scaling.",
+    date: "2026",
+    readTime: "11 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/SystemDesign-part-1",
+    image: "/SD1.png",
+    tags: ["System Design", "Networking", "Backend"],
   },
 ];
-
-// ADD MORE BLOG POSTS IN THE FUTURE
-// You can add posts from:
-// - Medium articles you write
-// - Dev.to posts
-// - Your personal blog
-// - Hashnode articles
-// - LinkedIn articles
-
-// Example structure:
-// {
-//   id: 5,
-//   title: "Your Blog Title",
-//   excerpt: "Brief description of the post",
-//   date: "Month Day, Year",
-//   readTime: "X min read",
-//   link: "your-blog-link",
-//   image: "your-image-url",
-//   tags: ["Tag1", "Tag2", "Tag3"],
-// },
