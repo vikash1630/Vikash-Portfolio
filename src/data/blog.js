@@ -89,4 +89,15 @@ export const blogData = [
     image: "/SD1.png",
     tags: ["System Design", "Networking", "Backend"],
   },
+  {
+    id: "SystemDesign-part-2-OOPS",
+    title: "System Design - 2 (OOPS)",
+    excerpt: "OOP for LLD: classes, objects, responsibilities, encapsulation, abstraction, inheritance, polymorphism, interfaces, and object relationships.",
+    date: "2026",
+    readTime: "12 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/SystemDesign-part-2-OOPS",
+    image: "/SD2.jpg",
+    tags: ["System Design", "OOPS", "LLD"],
+  },
+
 ];
