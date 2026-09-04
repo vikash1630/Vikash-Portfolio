@@ -14,6 +14,17 @@ export const blogData = [
   },
 
   {
+    id: "OOPS",
+    title: "Object Oriented Programming",
+    excerpt: "Master OOP for LLD: classes, objects, responsibilities, encapsulation, abstraction, inheritance, polymorphism, interfaces, abstract classes, and object relationships such as association, aggregation, composition, and dependency. Build strong object-thinking skills and choose composition vs inheritance effectively.",
+    date: "2026",
+    readTime: "9 min read",
+    link: "https://myblogs-umber.vercel.app/blogs/OOPS",            // adjust to your actual route
+    image: "/OOP1.png",
+    tags: ["OOP", "LLD", "Design Patterns"],
+  },
+
+  {
     id: "dsa-cheatsheet",
     title: "DSA Pattern Recognition Cheat Sheet",
     excerpt: "25 patterns, clues, and recognition tricks.",
@@ -36,50 +47,6 @@ export const blogData = [
   },
 
   {
-    id: "CN-part-2",
-    title: "Computer Networks Part 2: Transport Layer, Ports & Sockets",
-    excerpt: "Ports, sockets, TCP, UDP, and NAT mapping.",
-    date: "2026",
-    readTime: "8 min read",
-    link: "https://myblogs-umber.vercel.app/blogs/CN-part-2",
-    image: "/CN2.png",
-    tags: ["Computer Networks", "TCP", "UDP"],
-  },
-
-  {
-    id: "CN-part-3",
-    title: "Computer Networks Part 3: TCP Reliability & Congestion Control",
-    excerpt: "Handshakes, ACKs, windows, and congestion.",
-    date: "2026",
-    readTime: "10 min read",
-    link: "https://myblogs-umber.vercel.app/blogs/CN-part-3",
-    image: "/CN3.png",
-    tags: ["Computer Networks", "TCP", "Congestion Control"],
-  },
-
-  {
-    id: "CN-part-4",
-    title: "Computer Networks Part 4: DNS, HTTP, HTTPS & CDN",
-    excerpt: "DNS, HTTP, TLS, caching, and CDNs.",
-    date: "2026",
-    readTime: "8 min read",
-    link: "https://myblogs-umber.vercel.app/blogs/CN-part-4",
-    image: "/CN4.png",
-    tags: ["Computer Networks", "HTTP", "DNS"],
-  },
-
-  {
-    id: "CN-part-5",
-    title: "Computer Networks Part 5: Proxies, Architecture & Network Security",
-    excerpt: "Proxies, load balancers, security, and CORS.",
-    date: "2026",
-    readTime: "9 min read",
-    link: "https://myblogs-umber.vercel.app/blogs/CN-part-5",
-    image: "/CN5.png",
-    tags: ["Computer Networks", "System Design", "Security"],
-  },
-
-  {
     id: "SystemDesign-part-1",
     title: "System Design Fundamentals & Networking",
     excerpt: "Scalability, DNS, REST, databases, and scaling.",
@@ -88,16 +55,6 @@ export const blogData = [
     link: "https://myblogs-umber.vercel.app/blogs/SystemDesign-part-1",
     image: "/SD1.png",
     tags: ["System Design", "Networking", "Backend"],
-  },
-  {
-    id: "SystemDesign-part-2-OOPS",
-    title: "System Design - 2 (OOPS)",
-    excerpt: "OOP for LLD: classes, objects, responsibilities, encapsulation, abstraction, inheritance, polymorphism, interfaces, and object relationships.",
-    date: "2026",
-    readTime: "12 min read",
-    link: "https://myblogs-umber.vercel.app/blogs/SystemDesign-part-2-OOPS",
-    image: "/SD2.jpg",
-    tags: ["System Design", "OOPS", "LLD"],
   },
 
 ];

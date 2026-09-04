@@ -102,6 +102,18 @@ const Blog = () => {
             </a>
           ))}
         </div>
+
+        {/* Professional "Explore All Articles" button */}
+        <div className="flex justify-center mt-16">
+          <a
+            href="https://myblogs-umber.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="explore-btn inline-flex items-center gap-3 px-10 py-5 text-xl font-semibold text-white rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400/50"
+          >
+            🍃 Explore All Articles <span className="ml-1 text-xxl">→</span>
+          </a>
+        </div>
       </div>
 
       {/* Animations */}
@@ -138,6 +150,30 @@ const Blog = () => {
           animation: rainbow-bg 2s linear infinite;
           box-shadow: 0 0 20px rgba(239, 68, 68, 0.3), 0 0 40px rgba(234, 179, 8, 0.2), 0 0 60px rgba(34, 197, 94, 0.15);
           transform: scale(1.02);
+        }
+
+        /* Professional Explore Button – subtle, polished */
+        .explore-btn {
+          background-size: 200% 200%;
+          transition: all 0.3s ease;
+          will-change: transform, box-shadow;
+        }
+
+        .explore-btn:hover {
+          transform: scale(1.04);
+          box-shadow: 0 12px 30px rgba(99, 102, 241, 0.3), 0 4px 15px rgba(168, 85, 247, 0.2);
+        }
+
+        /* Mobile: smooth, no heavy animations */
+        @media (max-width: 767px) {
+          .explore-btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+          }
+          .explore-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+          }
         }
       `}</style>
     </section>
