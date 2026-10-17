@@ -178,11 +178,11 @@ const Contact = () => {
 
             {/* Primary Email */}
             <a
-              href="mailto:mvikash1630@gmail.com"
+              href="mailto:mvikash1657@gmail.com"
               className="font-semibold text-lg bg-gradient-to-r from-secondary via-primary to-fire 
               bg-clip-text text-transparent hover:opacity-80 transition"
             >
-              mvikash1630@gmail.com
+              mvikash1657@gmail.com
             </a>
 
             {/* Underline */}

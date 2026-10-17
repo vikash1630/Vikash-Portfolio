@@ -77,7 +77,7 @@ const Footer = () => {
     },
     {
       label: "Primary Email",
-      href: "mailto:m.vikash1630@gmail.com",
+      href: "mailto:mvikash1657@gmail.com",
       bg: "from-[#EA4335] to-[#C5221F] dark:from-[#EA4335] dark:to-[#a01b18]",
       icon: (
         // Solid Gmail-style envelope — fully opaque, clean fill
